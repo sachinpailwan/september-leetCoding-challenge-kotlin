@@ -1,8 +1,10 @@
-package com.pailsom.leetcode.problem
+package com.pailsom.kotlin.leet.problem
 
-import java.util.HashMap
-
-class Solution {
+fun main(arga:Array<String>) {
+    val d = ContainDuplicate()
+    println(d.containsNearbyAlmostDuplicate(intArrayOf(1,5,9,1,5,9),2,3))
+}
+class ContainDuplicate {
     fun containsNearbyAlmostDuplicate(nums: IntArray, k: Int, t: Int): Boolean {
         if (k < 1 || t < 0) return false
         val map: MutableMap<Long, Long> = HashMap()
